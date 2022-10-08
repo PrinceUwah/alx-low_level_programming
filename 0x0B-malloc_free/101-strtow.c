@@ -32,7 +32,7 @@ char **strtow(char *str)
 	arr[i] = malloc(sizeof(char) * (j - wc + 2));
 	if (arr[i] == NULL)
 	return (NULL);
-	break;
+		break;
 	}
 	}
 	for (k = 0; wc <= j; wc++, k++)
