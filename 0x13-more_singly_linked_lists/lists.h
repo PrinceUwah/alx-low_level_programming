@@ -1,21 +1,7 @@
-Abuka-Victor
-/
-alx-low_level_programming
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-alx-low_level_programming/0x13-more_singly_linked_lists/lists.h
-@Abuka-Victor
-Abuka-Victor Adv Task 1
- 1 contributor
-41 lines (35 sloc)  1.06 KB
-#ifndef LIST_H
-#define LIST_H
+#ifndef _LISTS_H_
+#define _LISTS_H_
+
+#include <stdlib.h>
 
 /**
  * struct listint_s - singly linked list
@@ -23,7 +9,7 @@ Abuka-Victor Adv Task 1
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- *
+ * for Holberton project
  */
 typedef struct listint_s
 {
@@ -31,13 +17,8 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-
-int _putchar(char c);
-size_t listint_len(const listint_t *h);
 size_t print_listint(const listint_t *h);
+size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
 listint_t *add_nodeint_end(listint_t **head, const int n);
 void free_listint(listint_t *head);
@@ -51,7 +32,5 @@ listint_t *reverse_listint(listint_t **head);
 size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
-
-
 
 #endif
