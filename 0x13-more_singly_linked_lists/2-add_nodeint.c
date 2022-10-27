@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * listint_len - Function that finds the number of elements in list
  * @h: Pointer to the head of listin_len_t list
